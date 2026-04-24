@@ -410,4 +410,134 @@ background:
 
 
 
-/* fim dos impactos */
+/* fim do cta */
+
+/* Começo da tela de impactos (hero4) */
+.hero4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero4-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero4-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    text-align: center;
+    max-width: 900px;
+}
+
+.hero4-text span {
+    color: #fec103;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+}
+
+/* carousel impactos (modelo pronto w3school */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+transform: translateX(20px);
+}
+
+.mySlides img {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    background-color: #fec103;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #000000;
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #fec103;
+  padding: 2px 16px;
+  color: black;
+  border:#000 solid 1px;
+  border-radius: 2px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* fim do carousel impactos */
