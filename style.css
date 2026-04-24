@@ -1,0 +1,413 @@
+/*@Author: Caio Henrique Marques Dos Santos
+--RA: R982IG7
+codigo CSS e HTML feito somente por mim!!!
+sem ajuda dos demais companheiros apenas Caio e ferramentas como copilot e claude code para auxiliar nas duvidas, correção, melhorias e responsividade */
+
+/* Configurações globais */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.global {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Fim das configurações globais */
+
+
+/* parte de navegação aonde contem logo, botao inicio e etc... */
+
+.header-nav {
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 70px;
+    height: auto;
+
+}
+
+.header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 80px
+}
+
+.nav a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.btn-destaque {
+    color: white !important;
+    background-color: #000;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+.btn-destaque:hover {
+    background-color: #000000ce;
+}
+
+
+/* Fim da parte de navegação */
+
+
+
+/* Estruturação, contem imagens botões textos e etc */
+
+/* .hero = Tela inicial */
+.hero {
+    display: flex;
+    font-family: "Playfair Display", serif;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 900px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    max-width: 550px;
+    margin: 0;
+}
+
+.hero span {
+    color: #fec103;
+}
+
+
+.hero img {
+    width: 700px;
+    height: auto;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-service {
+    background-color: black;
+    padding: 13px 25px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-conosco {
+
+    background-color: #fec103;
+    color: black;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-service:hover {
+    background-color: #000000ce;
+}
+
+.btn-conosco:hover {
+
+    background-color: #febf03ce;
+}
+
+
+/* Fim da tela inicial (hero) */
+
+
+/* Começo da tela de serviços (hero2) */
+
+.hero2 {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+
+
+.hero-text2 {
+    margin-left: auto;
+}
+
+.hero2 h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin: 0;
+    margin-right: 67px;
+}
+
+.hero2 p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    max-width: 650px;
+    text-align: justify;
+
+}
+
+.hero2-image img {
+
+    width: 500px;
+    height: 900px;
+    border-radius: 5px;
+}
+
+
+/* cards é a coluna aonde apresento os serviços */
+
+.hero2-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img {
+    width: 65px;
+    height: auto;
+    margin-right: 65px;
+}
+
+.cards h1 {
+    font-size: 15px;
+    color: #fec103;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.cards p {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+    max-width: 275px;
+    text-align: justify;
+    margin-right: 60px;
+}
+
+/* fim da coluna serviços */
+
+.hero2 .btn-conosco {
+    margin-top: 95px;
+    align-self: center;
+}
+
+/* fim da tela de serviços */
+
+.linha-destaque {
+
+    padding: 5px;
+    background-color: #fec103;
+}
+
+#espacamento {
+    padding: 30px;
+}
+
+
+/* Começo da tela de CTA */
+.hero3 {
+    display: flex;
+}
+
+.hero3-text {
+
+
+}
+
+.hero3-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    text-align: justify;
+    max-width: 690px;
+    margin-right: 92px;
+}
+
+.hero3-text span {
+    color: #fec103;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+}
+
+.hero3-text p {
+    color: black;
+    font-family: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero3-subtext{
+    display: flex;
+    justify-content: center;
+}
+
+.hero3-subtext p {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    max-width: 350px;
+    text-align: center;
+}
+
+.hero3-subtext span {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Apresentação dos celulares com graficos ficticios */
+
+.borda-cards{
+   display: flex;
+
+background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(180deg, #f1f5f9, #ebebe5) border-box;
+
+  border: 2px solid transparent;
+  border-radius: 24px;
+  padding: 32px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+.cards2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    
+}
+
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards2 img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card2-cel img {
+    width: 180px;
+    height: auto;
+}
+/* fim da apresentação ficticia */
+
+/* bolinhas com impactos que uma landing page mal feita pode trazer */
+.balls {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+}
+
+.ball {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+
+}
+
+.balls img {
+
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+
+}
+
+.ball p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #000;
+    max-width: 220px;
+
+}
+
+.btn-hero3{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* fim dos impactos */
