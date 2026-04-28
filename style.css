@@ -16,6 +16,8 @@ body {
 
 }
 
+
+
 .global {
     max-width: 1300px;
     margin: 0 auto;
@@ -31,7 +33,7 @@ body {
 
     position: sticky;
     top: 0;
-
+z-index: 9999;
     display: flex;
     justify-content: space-evenly;
 
@@ -172,41 +174,57 @@ body {
 /* Fim da tela inicial (hero) */
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Começo da tela de serviços (hero2) */
 
 .hero2 {
     display: flex;
-    gap: 60px;
-    align-items: flex-start;
+    gap: 30px;
+    justify-content: flex-start;
 }
 
-
+.linha {
+    width: 50px;
+    height: 4px;
+    background-color: #fec103;
+}
 
 .hero-text2 {
-    margin-left: auto;
+    max-width: 490px;
+    flex-shrink: 0;
+}
+
+#txtDestaque {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #fec103;
 }
 
 .hero2 h1 {
     font-family: "Playfair Display", serif;
     font-size: 48px;
-    margin: 0;
-    margin-right: 67px;
 }
 
 .hero2 p {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Montserrat", sans-serif;
-    max-width: 650px;
-    text-align: justify;
-
+    max-width: 420px;
+}
+.hero2 .btn-conosco {
+ margin: 75px auto 0 85px;
+ display: block;
 }
 
-.hero2-image img {
-
-    width: 500px;
-    height: 900px;
-    border-radius: 5px;
-}
 
 
 /* cards é a coluna aonde apresento os serviços */
@@ -214,26 +232,38 @@ body {
 .hero2-cards {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
+
+
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.082);
+    gap: 5px;
+    }
+    .card:hover {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+    }
 
 .cards img {
-    width: 65px;
+    width: 65px !important;
     height: auto;
-    margin-right: 65px;
 }
+
 
 .cards h1 {
     font-size: 15px;
@@ -247,18 +277,62 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 15px;
-    margin: 0;
     max-width: 275px;
-    text-align: justify;
-    margin-right: 60px;
+}
+
+
+.cards-lateral{
+    display: flex;
+    gap: 30px;
+}
+
+.txt-lateral {
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.card-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.082);
+    gap: 5px;
+    width: 100%;
+}
+
+.card-lateral:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.card-lateral img {
+    width: 65px;
+    height: auto;
+}
+
+.card-lateral h1 {
+    font-size: 15px;
+    color: #fec103;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-lateral p {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    max-width: 275px;
+    margin: 0;
 }
 
 /* fim da coluna serviços */
-
-.hero2 .btn-conosco {
-    margin-top: 95px;
-    align-self: center;
-}
 
 /* fim da tela de serviços */
 
@@ -285,7 +359,7 @@ body {
 
 .hero3-text h1 {
     font-family: "Playfair Display", serif;
-    font-size: 48px;
+    font-size: 40px;
     text-align: justify;
     max-width: 690px;
     margin-right: 92px;
@@ -293,15 +367,10 @@ body {
 
 .hero3-text span {
     color: #fec103;
-    font-size: 48px;
+    font-size: 40px;
     font-family: "Playfair Display", serif;
 }
 
-.hero3-text p {
-    color: black;
-    font-family: 25px;
-    font-family: "Montserrat", sans-serif;
-}
 
 .hero3-subtext{
     display: flex;
@@ -309,16 +378,17 @@ body {
 }
 
 .hero3-subtext p {
-    font-size: 25px;
+    font-size: 23px;
     font-family: "Montserrat", sans-serif;
     max-width: 350px;
     text-align: center;
 }
 
 .hero3-subtext span {
-    font-size: 25px;
+    font-size: 23px;
     font-family: "Montserrat", sans-serif;
 }
+
 
 /* Apresentação dos celulares com graficos ficticios */
 
@@ -363,6 +433,21 @@ background:
     width: 180px;
     height: auto;
 }
+
+.cards2:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+.card2-cel:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
 /* fim da apresentação ficticia */
 
 /* bolinhas com impactos que uma landing page mal feita pode trazer */
@@ -406,6 +491,7 @@ background:
 .btn-hero3{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 
 
