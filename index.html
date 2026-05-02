@@ -21,6 +21,16 @@
       <img src="images/logo.png" alt="">
       <h1>LandPage.</h1>
     </div>
+
+<button class="nav-toggle" onclick="
+    this.classList.toggle('aberto');
+    document.querySelector('.nav').classList.toggle('aberto');
+">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
     <div class="nav">
       <a href="#inicio" class="btn-destaque">Inicio</a>
       <a href="#service" class="btn-destaque">Serviços</a>
@@ -124,26 +134,26 @@
   <div class="cards-lateral">
           
           <div class="card-lateral">
-            <img src="images/atendimento.png" alt="atendimento">
+            <img src="images/seguranca.png" alt="atendimento">
             <h1>Segurança</h1>
             <p>Atendimento personalizado para entender as necessidades específicas do seu negócio e oferecer soluções
               sob medida</p>
           </div>
           <div class="card-lateral">
             
-            <img src="images/estrategia.png" alt="estrategia">
+            <img src="images/marketing.png" alt="estrategia">
             <h1>Marketing</h1>
             <p>Estratégias de marketing digital para promover sua landing page e atrair mais visitantes qualificados</p>
           </div>
           <div class="card-lateral">
-            <img src="images/analise.png" alt="analise">
+            <img src="images/analises.png" alt="analise">
             <h1>Análises</h1>
             <p>Análise de dados para monitorar o desempenho da sua landing page e fazer ajustes contínuos para
               melhorar os resultados</p>
           </div>
           <div class="card-lateral">
             
-            <img src="images/atualizacao.png" alt="atualizacao">
+            <img src="images/parceria.png" alt="atualizacao">
             <h1>Parceria</h1>
             <p>Atualizações regulares para garantir que sua landing page esteja sempre atualizada com as últimas
               tendências de design e tecnologia</p >
@@ -223,32 +233,32 @@
         <!-- Full-width images with number text -->
         <div class="mySlides">
           <div class="numbertext">1 / 6</div>
-          <img src="images/impacto-2.jpg">
+          <img src="images/impacto-1.png">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 6</div>
-          <img src="images/impacto-2.jpg">
+          <img src="images/impacto-2.png">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 6</div>
-          <img src="images/impacto-2.jpg">
+          <img src="images/impacto-3.png">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 6</div>
-          <img src="images/impacto-2.jpg">
+          <img src="images/impacto-4.png">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">5 / 6</div>
-          <img src="images/impacto-2.jpg">
+          <img src="images/impacto-5.png">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">6 / 6</div>
-          <img src="images/impacto-2.jpg">
+          <img src="images/impacto-6.png">
         </div>
 
         <!-- Next and previous buttons -->
@@ -263,27 +273,27 @@
         <!-- Thumbnail images -->
         <div class="row">
           <div class="column">
-            <img class="demo cursor" src="images/impacto-2.jpg" style="width:100%" onclick="currentSlide(1)"
+            <img class="demo cursor" src="images/impacto-1.png" style="width:100%" onclick="currentSlide(1)"
               alt="The Woods">
           </div>
           <div class="column">
-            <img class="demo cursor" src="images/impacto-2.jpg" style="width:100%" onclick="currentSlide(2)"
+            <img class="demo cursor" src="images/impacto-2.png" style="width:100%" onclick="currentSlide(2)"
               alt="Cinque Terre">
           </div>
           <div class="column">
-            <img class="demo cursor" src="images/impacto-2.jpg" style="width:100%" onclick="currentSlide(3)"
+            <img class="demo cursor" src="images/impacto-3.png" style="width:100%" onclick="currentSlide(3)"
               alt="Mountains and fjords">
           </div>
           <div class="column">
-            <img class="demo cursor" src="images/impacto-2.jpg" style="width:100%" onclick="currentSlide(4)"
+            <img class="demo cursor" src="images/impacto-4.png" style="width:100%" onclick="currentSlide(4)"
               alt="Northern Lights">
           </div>
           <div class="column">
-            <img class="demo cursor" src="images/impacto-2.jpg" style="width:100%" onclick="currentSlide(5)"
+            <img class="demo cursor" src="images/impacto-5.png" style="width:100%" onclick="currentSlide(5)"
               alt="Nature and sunrise">
           </div>
           <div class="column">
-            <img class="demo cursor" src="images/impacto-2.jpg" style="width:100%" onclick="currentSlide(6)"
+            <img class="demo cursor" src="images/impacto-6.png" style="width:100%" onclick="currentSlide(6)"
               alt="Snowy Mountains">
           </div>
         </div>
@@ -327,8 +337,18 @@
       </div>
     </section> <!-- Fim tela de contato-->
     </main>
-
-
+    
+<footer>
+  <div class="footer">
+    <p>© 2026 LandPage.
+      <br><span>Os direitos reservados.</span>
+      <br>Desenvolvido por: Caio Santos & Kaua Trindade</p>
+    <div class="social-media">
+      <a href="#"><img src="images/facebook.png" alt="Facebook">Facebook</a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter">Twitter</a>
+      <a href="#"><img src="images/linkedin.png" alt="LinkedIn">LinkedIn</a>
+    </div>
+</footer>    
   </div>
   
   <script> // JavaScript para o carousel de imagens
@@ -402,8 +422,6 @@ document.querySelectorAll('.btn-service').forEach(btn => {
       .scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-
 
 
   </script> <!-- JavaScript para o carousel de imagens -->

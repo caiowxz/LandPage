@@ -318,6 +318,7 @@ z-index: 9999;
 .card-lateral img {
     width: 65px;
     height: auto;
+    border-radius: 5px;
 }
 
 .card-lateral h1 {
@@ -671,7 +672,7 @@ font-family: "Montserrat", sans-serif;
 /* elemtno-form é o elemento amarelo que está atras do fomulario */
 .elemento-form {
     position: absolute;
-    left: 1000px;
+    left: 80px;
     margin-top: 85px;
     z-index: -1;
     background-color: #fec103;
@@ -683,9 +684,11 @@ font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 
 .hero5-contato h1 {
+    
     font-family: "Playfair Display", serif;
     font-size: 48px;
     text-align: center;
@@ -731,3 +734,549 @@ button[type="button"]:hover {
 }
 
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+.footer p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.footer img {
+    width: 30px;
+    height: auto;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+
+}
+
+
+/* =================================================================================================
+RESPONSIVIDADE */ 
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+
+   /* ==============================
+   Botão Hambúrguer
+   ============================== */
+
+.nav-toggle {
+    display: none; /* oculto por padrão em telas grandes */
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle:hover {
+    background-color: #fec103;
+    border-color: #fec103;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animação do X ao abrir */
+.nav-toggle.aberto span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.aberto span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.aberto span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* ── Notebook (1024px – 1439px) ── */
+@media (max-width: 1439px) and (min-width: 1025px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero img {
+        max-width: 560px;
+    }
+
+    .hero2 h1 {
+        font-size: 38px;
+    }
+
+    .hero2 p {
+        font-size: 20px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero3-text h1 {
+        font-size: 34px;
+        margin-right: 40px;
+    }
+
+    .hero5-map iframe {
+        max-width: 480px;
+        height: 450px;
+    }
+
+    .elemento-form {
+        left: 50px;
+        width: 240px;
+    }
+
+    .hero5-contato h1,
+    .hero5-contato form {
+        margin-left: 100px;
+    }
+}
+
+/* ── Tablet (768px – 1024px) ── */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header-nav {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .nav {
+        gap: 25px;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        max-width: 100%;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .hero-btn {
+        justify-content: center;
+    }
+
+    .hero2 {
+        flex-direction: column;
+    }
+
+    .hero2 h1 {
+        font-size: 36px;
+    }
+
+    .hero2 p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .hero-text2 {
+        max-width: 100%;
+    }
+
+    .hero2 .btn-conosco {
+        margin: 30px 0 0 0;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-lateral {
+        flex-wrap: wrap;
+    }
+
+    .card-lateral {
+        flex: 1 1 calc(50% - 15px);
+    }
+
+    .hero3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero3-text h1 {
+        font-size: 32px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .borda-cards {
+        padding: 20px;
+    }
+
+    .cards2 img {
+        width: 150px;
+    }
+
+    .ball {
+        width: 45%;
+    }
+
+    .hero4-text h1 {
+        font-size: 36px;
+    }
+
+    .mySlides img {
+        width: 80%;
+    }
+
+    .hero5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero5-map iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 380px;
+    }
+
+    .elemento-form {
+        display: none;
+    }
+
+    .hero5-contato h1,
+    .hero5-contato form {
+        margin-left: 0;
+    }
+
+    .hero5-contato h1 {
+        font-size: 36px;
+        margin-top: 40px;
+    }
+}
+
+/* ── Celular (até 768px) ── */
+@media (max-width: 768px) {
+    .global {
+        padding: 0 15px;
+    }
+
+    /* Navbar */
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+        gap: 0;
+    }
+
+    .header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .nav.aberto {
+        display: flex; /* ativar com JS: nav.classList.toggle('aberto') */
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    .hero-text {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .hero-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-service,
+    .btn-conosco {
+        font-size: 15px;
+        padding: 11px 20px;
+    }
+
+    /* Hero 2 */
+    .hero2 {
+        flex-direction: column;
+    }
+
+    .hero2 h1 {
+        font-size: 28px;
+    }
+
+    .hero2 p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .hero-text2 {
+        max-width: 100%;
+    }
+
+    .hero2 .btn-conosco {
+        margin: 20px 0 0 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Cards */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards p {
+        max-width: 100%;
+    }
+
+    /* Cards laterais */
+    .cards-lateral {
+        flex-direction: column;
+    }
+
+    .card-lateral p {
+        max-width: 100%;
+    }
+
+    /* Hero 3 */
+    .hero3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero3-text h1 {
+        font-size: 26px;
+        margin-right: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero3-text span {
+        font-size: 26px;
+    }
+
+    .hero3-subtext p,
+    .hero3-subtext span {
+        font-size: 16px;
+    }
+
+    /* Borda cards / celulares fictícios */
+    .borda-cards {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .cards2 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cards2 img {
+        width: 130px;
+    }
+
+    .card2-cel img {
+        width: 120px;
+    }
+
+    /* Bolinhas */
+    .balls {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 30px;
+    }
+
+    .ball {
+        width: 100%;
+    }
+
+    .btn-hero3 {
+        margin-top: 40px;
+    }
+
+    /* Hero 4 */
+    .hero4-text h1 {
+        font-size: 28px;
+        max-width: 100%;
+    }
+
+    .hero4-text span {
+        font-size: 28px;
+    }
+
+    /* Carousel */
+    .mySlides img {
+        width: 100%;
+    }
+
+    .prev,
+    .next {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .column {
+        width: 33.33%;
+    }
+
+    /* Hero 5 / Contato */
+    .hero5 {
+        flex-direction: column;
+    }
+
+    .hero5-map h1 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .hero5-map iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .elemento-form {
+        display: none;
+    }
+
+    .hero5-contato {
+        width: 100%;
+    }
+
+    .hero5-contato h1 {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .hero5-contato form {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    button[type="button"] {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+    /* Espaçamento geral */
+    .espacamento {
+        padding: 15px;
+    }
+}
+
+/* ── Celular pequeno (até 480px) ── */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero2 h1,
+    .hero4-text h1,
+    .hero5-map h1,
+    .hero5-contato h1 {
+        font-size: 24px;
+    }
+
+    .hero4-text span {
+        font-size: 24px;
+    }
+
+    .hero3-text h1,
+    .hero3-text span {
+        font-size: 22px;
+    }
+
+    .btn-service,
+    .btn-conosco {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+    .header h1 {
+        font-size: 16px;
+    }
+
+    .header img {
+        width: 50px;
+    }
+}
