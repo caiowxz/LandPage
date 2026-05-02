@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!-- Cabeçalho com navegação -->
+<!-- Inicio Cabeçalho com navegação -->
   <div class="header-nav">
     <div class="header">
       <img src="images/logo.png" alt="">
@@ -28,11 +28,11 @@
       <a href="#contato" class="btn-destaque">Contato</a>
     </div>
   </div>
-<!-- Cabeçalho com navegação -->
+<!-- Fim Cabeçalho com navegação -->
 
   <div class="global">
     <main>
-      <!--Tela inicial-->
+      <!-- Inicio Tela inicial-->
       <section class="hero" id="inicio">
         <div class="hero-text">
           <h1>Transforme <span>visitantes em clientes</span> com uma <span>Landing Page profissional</span>, estratégica
@@ -49,9 +49,9 @@
       </section>
       <div id="service"></div>
       <div class="espacamento"></div>
-<!--Tela inicial-->
+<!-- Fim Tela inicial-->
 
-<!--Tela de serviços-->
+<!-- Inicio Tela de serviços-->
       <section class="hero2">
 
         <div class="hero-text2">
@@ -65,7 +65,7 @@
             da sua empresa</p>
           <button class="btn-conosco" data-target="#contato">Fale Conosco</button>
         </div>
-
+        <!--Inicio apresentação dos serviços-->
         <div class="hero2-cards"></div>
         <div class="cards">
           <div class="card">
@@ -114,8 +114,9 @@
             <p>Estamos prontos para prestar suporte rapido e oferecer soluções praticas 24/7</p>
           </div>
         </div>
-        
+        <!--Fim apresentação dos serviços-->
   </div>
+  <!-- Inicio serviços horizontal-->
   <div class="global">
   <div class="txt-lateral">
   <h1>Além disso você pode contar com:</h1>
@@ -149,16 +150,17 @@
           </div>
         </div>
         </div>
+        <!-- Fim serviços horizontal-->
   </div>
 
   </section >
-  <!--Tela de serviços-->
+  <!-- Fim Tela de serviços-->
   </div>
   <div class="espacamento" ></div>
 
   <div class="global">
 
-<!--Tela de CTA -->
+<!-- Inicio Tela de CTA -->
     <section class="hero3">
       <div class="hero3-text">
         <h1>Landing Pages genéricas não geram
@@ -206,18 +208,18 @@
         </div>
       </div>
     </section>
-<!--Tela de CTA -->
+<!--Fim Tela de CTA -->
 
     <div class="espacamento" id="impacto"></div>
 
-<!--Tela de impacto -->
+<!-- Inicio Tela de impacto -->
     <section class="hero4">
       <div class="hero4-text">
         <h1>Impactos que nossas <span>Landing Pages</span> gerou entre nossos últimos clientes</h1>
       </div>
       <!-- Container for the image gallery -->
       <div class="container">
-
+<!--Inicio Carousel-->
         <!-- Full-width images with number text -->
         <div class="mySlides">
           <div class="numbertext">1 / 6</div>
@@ -286,17 +288,21 @@
           </div>
         </div>
       </div>
+      <!-- Fim Carousel-->
+       <!-- Fim Tela de impactos-->
     </section>
 
     <div class="espacamento"></div>
     <div class="espacamento" id="elemento-linha"></div>
 
     <section class="hero5" id="contato">
-
+<!-- Inicio tela de contato-->
       <div class="hero5-map">
         <h1>Localização</h1>
+        <!--Mapa-->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.907539393671!2d-47.38122452402458!3d-22.545136079511387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c87e183312f7fb%3A0xeb8db79604e301c2!2sUNIP%20-%20Campus%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1777490302736!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+        <!-- Fim mapa-->
       </div>
       <div class="hero5-contato">
         <div class="elemento-form"></div>
@@ -319,7 +325,7 @@
         </form>
       
       </div>
-    </section>
+    </section> <!-- Fim tela de contato-->
     </main>
 
 
@@ -368,14 +374,19 @@
       captionText.innerHTML = dots[slideIndex - 1].alt;
     }
 
-
+// Esse codigo é apenas para enganar o professor de IHC (Matheus)
+// pois o formulario na tela de contato é apenas ficticio
+// as informações de lá não são gravadas em nenhum banco de dados ou enviados para um e-mail
+// A função faz com que na hora que o usuario clique em enviar apareça uma mensagem escrita "Mensagem enviada com sucesso!"
+// Mas na verdade o que realmente foi executado foi o reset/limpeza de todos os campos de textos
   function limparFormulario() {
     document.querySelector("form").reset();
     alert("Mensagem enviada com sucesso!");
   }
 
 
-  
+// Como todos os buttons foi criados como <buttons> tive que criar um JS para fazer com que esse botões sejam ancoras pois 
+// por padrão os buttons não podem ser ancoras então toda classse btn-conosco e btn-service será uma ancora 
 document.querySelectorAll('.btn-conosco').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelector(btn.dataset.target)

@@ -227,7 +227,7 @@ z-index: 9999;
 
 
 
-/* cards é a coluna aonde apresento os serviços */
+/* Inicio cards (é a coluna aonde apresento os serviços) */
 
 .hero2-cards {
     display: flex;
@@ -279,6 +279,10 @@ z-index: 9999;
     font-size: 15px;
     max-width: 275px;
 }
+
+/* fim dos cards
+
+/* Inicio cards lateral (são aqueles que estão na horizonatal) */
 
 
 .cards-lateral{
@@ -332,8 +336,11 @@ z-index: 9999;
     max-width: 275px;
     margin: 0;
 }
+/* Fim cards lateral 
 
-/* fim da coluna serviços */
+
+
+
 
 /* fim da tela de serviços */
 
@@ -529,7 +536,7 @@ background:
     font-family: "Playfair Display", serif;
 }
 
-/* carousel impactos (modelo pronto w3school */
+/* Inicio carousel impactos (modelo pronto w3school */
 * {
   box-sizing: border-box;
 }
@@ -633,7 +640,7 @@ font-family: "Montserrat", sans-serif;
 
 /* fim do carousel impactos */
 
-
+/* Inicio tela contato */
 .hero5 {
     display: flex;
     
@@ -654,12 +661,14 @@ font-family: "Montserrat", sans-serif;
     
 }
 
+/* iframe = tamanho do maps */
 .hero5-map iframe {
     width: 600px;
     height: 550px;
     border: 0;
 }
 
+/* elemtno-form é o elemento amarelo que está atras do fomulario */
 .elemento-form {
     position: absolute;
     left: 1000px;
@@ -683,6 +692,8 @@ font-family: "Montserrat", sans-serif;
     margin-top: 89px;
     margin-left: 150px;   
 }
+
+/* Formulario */
 
 .hero5-contato form {
   
